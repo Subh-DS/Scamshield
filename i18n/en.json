@@ -1,0 +1,100 @@
+{
+  "home": {
+    "badge": "Cyber Safe Squad 🇮🇳",
+    "heroTitle": "Satark",
+    "heroTitleColor": "Raho!",
+    "heroSubtitle": "Saavdhan Raho!",
+    "heroDesc": "Your friendly AI Cyber-Cop. I analyze messages and links to protect you from financial fraud and 'Digital Arrest' threats.",
+    "btnStart": "Start Scan",
+    "btnRadar": "Scam Radar",
+    "btnEdu": "Beware Scams",
+    "activeScamsTitle": "Active Scams",
+    "featuresTitle": "How I Protect You?",
+    "featuresSubtitle": "Powerful AI tools designed for your safety.",
+    "f1Title": "Message Analysis",
+    "f1Desc": "I check SMS and WhatsApp messages for linguistic patterns of fraud.",
+    "f2Title": "Document Verification",
+    "f2Desc": "I scan screenshots and letters to identify fake logos and false claims.",
+    "f3Title": "Live Monitor",
+    "f3Desc": "I can watch through your camera to spot dangerous items like QR codes.",
+    "verified": "Verified",
+    "highRiskAlert": "High Risk Alert!",
+    "riskLabel": "Risk"
+  },
+  "radar": {
+    "back": "Back",
+    "title": "Scam Intelligence Radar",
+    "activateBtn": "Activate Local Alerts",
+    "activateDesc": "Allow location access to see which scams are trending in your specific city/district right now.",
+    "detecting": "Scanning Live News Database...",
+    "error": "Could not fetch location.",
+    "retry": "Try Again",
+    "liveIntel": "Live Intelligence For",
+    "grounded": "Real-time Grounded",
+    "trend": "Trend",
+    "activeReports": "Active Reports",
+    "recentIncidents": "Recent Local Incidents",
+    "verifiedSources": "Verified News Sources",
+    "communityReports": "Community Reports (Simulated)",
+    "reportScam": "Report a Scam",
+    "helpAi": "Help the AI learn! If you encountered a scammer, submit the details here to update the national database.",
+    "scamTypeLabel": "Scam Type",
+    "scamTypePlaceholder": "e.g. UPI Fraud, Fake Call",
+    "descLabel": "Description / Number",
+    "descPlaceholder": "What happened? Share phone number or link if safe.",
+    "submitBtn": "Add to Database",
+    "successTitle": "Report Added!",
+    "successMsg": "Thank you for keeping the community safe.",
+    "preventedToday": "Scams Prevented Today"
+  },
+  "education": {
+    "back": "Back",
+    "title": "Beware Scams Library",
+    "subtitle": "Real-world examples to help you identify fraud.",
+    "redFlags": "Red Flags to Watch",
+    "scams": {
+      "digitalArrest": {
+        "title": "Digital Arrest Scam",
+        "category": "Impersonation",
+        "severity": "Critical",
+        "description": "Scammers pose as CBI, Police, or Narcotics officials via video call (Skype/WhatsApp). They claim a parcel with drugs/passports is addressed to you and demand money to avoid arrest.",
+        "redFlags": ["Video call interrogation (Police never do this)", "Demand for 'money transfer'", "Threats of immediate arrest"]
+      },
+      "upi": {
+        "title": "UPI Refund / QR Code Scam",
+        "category": "Financial",
+        "severity": "High",
+        "description": "Fraudsters on OLX/Facebook Marketplace claim they want to send you money. They ask you to scan a QR code or enter your UPI PIN to 'receive' the payment.",
+        "redFlags": ["Asking for PIN to RECEIVE money", "Urgency to complete transaction", "QR Code sent via WhatsApp"]
+      },
+      "electricity": {
+        "title": "Electricity Bill Scam",
+        "category": "Utility",
+        "severity": "High",
+        "description": "You receive an SMS: 'Your power will be cut tonight at 9:30 PM due to unpaid bill. Call this number.' The person asks you to download an app like AnyDesk to 'update KYC'.",
+        "redFlags": ["Threat of immediate disconnection", "Personal mobile number used", "Request to download AnyDesk"]
+      },
+      "job": {
+        "title": "Part-time Job / Telegram Scam",
+        "category": "Employment",
+        "severity": "Medium",
+        "description": "Offers of 'Work from Home' for rating hotels or videos. They pay small amounts initially to build trust, then ask you to invest money for 'prepaid tasks' which gets blocked.",
+        "redFlags": ["Too good to be true earnings", "Added to Telegram groups", "Asking for investment to get salary"]
+      },
+      "apk": {
+        "title": "APK / Malicious App Scam",
+        "category": "Malware",
+        "severity": "Critical",
+        "description": "A link is sent claiming to be a bank update, reward, or explicit content. Downloading the .apk file installs malware that steals your OTPs and reads your notifications.",
+        "redFlags": [".apk file shared on WhatsApp", "App asking for Accessibility Permissions", "Not from Google Play Store"]
+      },
+      "sextortion": {
+        "title": "Sextortion",
+        "category": "Blackmail",
+        "severity": "Critical",
+        "description": "A stranger video calls you, plays an obscene video, and captures your face. They then threaten to upload the morphed video to YouTube/Social Media unless you pay.",
+        "redFlags": ["Video call from unknown profile", "Immediate inappropriate behavior", "Threats to share with friends/family"]
+      }
+    }
+  }
+}

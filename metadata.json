@@ -1,0 +1,9 @@
+{
+  "name": "ScamShield",
+  "description": "An AI-powered financial fraud detection application that analyzes text messages and screenshots to identify potential scams using Google Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

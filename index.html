@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScamShield - Fraud Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.4s ease-out forwards;
+      }
+      
+      /* Cartoon Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+      }
+      .animate-float { animation: float 4s ease-in-out infinite; }
+      
+      @keyframes shake-gentle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-3deg); }
+        75% { transform: rotate(3deg); }
+      }
+      .animate-shake-gentle { animation: shake-gentle 3s ease-in-out infinite; }
+
+      @keyframes scale-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+      }
+      .animate-scale-pulse { animation: scale-pulse 3s ease-in-out infinite; }
+
+      @keyframes pop-in {
+        0% { transform: scale(0); opacity: 0; }
+        60% { transform: scale(1.1); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-pop-in { animation: pop-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+      @keyframes blink {
+        0%, 96%, 100% { transform: scaleY(1); }
+        98% { transform: scaleY(0.1); }
+      }
+      .animate-blink { animation: blink 4s infinite; }
+
+      @keyframes bounce-soft {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .animate-bounce-soft { animation: bounce-soft 2s ease-in-out infinite; }
+      
+      /* Scan line animation */
+      @keyframes scan {
+          0% { top: 0%; opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { top: 100%; opacity: 0; }
+      }
+
+      /* 3D CSS Utilities */
+      .perspective-container {
+        perspective: 1200px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      
+      /* Mascot Specific Animations */
+      @keyframes float-3d {
+        0%, 100% { transform: translateY(0px) rotateX(0deg); }
+        50% { transform: translateY(-10px) rotateX(2deg); }
+      }
+      .animate-float-3d {
+        animation: float-3d 4s ease-in-out infinite;
+      }
+
+      @keyframes tail-wag {
+        0%, 100% { transform: rotateY(-15deg) rotateZ(10deg); }
+        50% { transform: rotateY(15deg) rotateZ(-10deg); }
+      }
+      .animate-tail-wag {
+        animation: tail-wag 0.8s ease-in-out infinite;
+      }
+
+      @keyframes siren-flash {
+        0%, 100% { background-color: #ef4444; box-shadow: 0 0 10px #ef4444; }
+        50% { background-color: #3b82f6; box-shadow: 0 0 10px #3b82f6; }
+      }
+      .animate-siren {
+        animation: siren-flash 0.5s steps(1) infinite;
+      }
+
+      /* Utility for cube faces to prevent blurry text/borders */
+      .cube-face {
+        backface-visibility: hidden;
+        /* Using slightly less than 1px border sometimes fixes gaps in CSS 3D */
+        box-shadow: inset 0 0 0 2px rgba(15, 23, 42, 1); 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
